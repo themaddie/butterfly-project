@@ -1,54 +1,55 @@
-.container{
-    width: 100%;
-    height: 395px;
-    display: flex;
-    box-sizing: content-box;
-    justify-content: space-between;
+.container {
+  width: 100%;
+  height: 395px;
+  display: flex;
+  box-sizing: content-box;
+  justify-content: space-between;
 }
 
-.bazingaIndex{
-    width: 52%;
-    margin-left: 12%;
+.bazingaIndex {
+  width: 52%;
+  margin-left: 12%;
 }
 
-.bazingaContainer{
-    width: 65%;
-    direction: rtl;
-    margin: 5% 18% 0 0;
+.bazingaContainer {
+  width: 65%;
+  direction: rtl;
+  margin: 5% 18% 0 0;
 }
 
 .bazingaTitle {
-    color: #75362f;
-    font-size: 2rem;
-    font-family: "Dana-Medium";
-  }
-  
-  .bazingaDes {
-    height: 150px;
-    margin-right: 1%;
-    font-size: 1rem;
-    font-family: "Dana-Light";
-  }
+  color: #75362f;
+  font-size: 2rem;
+  font-family: "Dana-Medium";
+}
 
-  .bazingaBtn {
-    float: left;
-    width: 100px;
-    height: 40px;
-    cursor: pointer;
-    color: #2b2b2b;
-    margin-left: 30%;
-    padding-top: 7px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: "Dana-Bold";
-    border: 2px solid #2b2b2b;
-    background-color: #f5f0ea;
-  }
+.bazingaDes {
+  height: 150px;
+  font-size: 1rem;
+  color: #2b2b2b;
+  margin-right: 1%;
+  font-family: "Dana-Light";
+}
 
-  .bazingaBtn:hover {
-    border: none;
-    color: #f5f0ea;
-    background-color: #75362f;
-  }  
+.bazingaBtn {
+  float: left;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  color: #2b2b2b;
+  margin-left: 30%;
+  padding-top: 7px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Dana-Bold";
+  border: 2px solid #2b2b2b;
+  background-color: #f5f0ea;
+}
+
+.bazingaBtn:hover {
+  border: none;
+  color: #f5f0ea;
+  background-color: #75362f;
+}

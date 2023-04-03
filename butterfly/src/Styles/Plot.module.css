@@ -25,30 +25,31 @@
 
 .plotDes {
   height: 150px;
-  margin-right: 1%;
   font-size: 1rem;
+  margin-right: 1%;
+  color: #2b2b2b;
   font-family: "Dana-Light";
 }
 
 .plotBtn {
-    float: left;
-    width: 100px;
-    height: 40px;
-    cursor: pointer;
-    color: #2b2b2b;
-    margin-left: 40%;
-    padding-top: 7px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: "Dana-Bold";
-    border: 2px solid #2b2b2b;
-    background-color: #f5f0ea;
-  }
+  float: left;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  color: #2b2b2b;
+  margin-left: 40%;
+  padding-top: 7px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Dana-Bold";
+  border: 2px solid #2b2b2b;
+  background-color: #f5f0ea;
+}
 
-  .plotBtn:hover {
-    border: none;
-    color: #f5f0ea;
-    background-color: #75362f;
-  }  
+.plotBtn:hover {
+  border: none;
+  color: #f5f0ea;
+  background-color: #75362f;
+}
