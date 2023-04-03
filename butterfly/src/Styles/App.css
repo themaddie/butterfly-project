@@ -13,6 +13,11 @@
   src: url(../Fonts/Dana-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Dana-Light";
+  src: url(../Fonts/Dana-Light.ttf);
+}
+
 * {
   font-family: "Dana-Regular";
 }
