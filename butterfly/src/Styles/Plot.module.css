@@ -18,7 +18,7 @@
 }
 
 .plotTitle {
-  color: #75362f;
+  color: #70352E;
   font-size: 2rem;
   font-family: "Dana-Medium";
 }
@@ -51,5 +51,5 @@
 .plotBtn:hover {
   border: none;
   color: #f5f0ea;
-  background-color: #75362f;
+  background-color: #70352E;
 }
