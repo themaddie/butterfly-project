@@ -18,12 +18,13 @@
 }
 
 .bazingaTitle {
-  color: #70352E;
+  color: #70352e;
   font-size: 2rem;
   font-family: "Dana-Medium";
 }
 
 .bazingaDes {
+  width: 300px;
   height: 150px;
   font-size: 1rem;
   color: #2b2b2b;
@@ -43,13 +44,24 @@
   text-align: center;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "Dana-Bold";
-  border: 2px solid #2b2b2b;
+  border: 1.5px solid #2b2b2b;
   background-color: #f5f0ea;
 }
 
 .bazingaBtn:hover {
   border: none;
   color: #f5f0ea;
-  background-color: #70352E;
+  background-color: #70352e;
+}
+
+@media only screen and (max-width: 850px) {
+  .bazingaIndex {
+    display: none;
+  }
+  .container {
+    justify-content: center;
+  }
+  .bazingaContainer {
+    margin: 0;
+  }
 }

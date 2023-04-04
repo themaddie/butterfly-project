@@ -8,8 +8,8 @@ import aboutIndex from '../Images/aboutIndex.png';
 import navLine from '../Images/headerLine.png';
 
 const About = () => {
-    const [aboutTitle, setAboutTitle] = useState("عنوان خیلی الکی");
-    const [aboutDes, setAboutDes] = useState("متن کاملا فرضی");
+    const [aboutTitle, setAboutTitle] = useState("اینجا رو کی ساخته؟");
+    const [aboutDes, setAboutDes] = useState("همانطور که قبلا ذکر شد، اینجا توسط کسی که اندکی تنها و بسیار آشفته است، ساخته شده.");
     return (
         <div className={Style.container}>
             <header>

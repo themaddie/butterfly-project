@@ -7,8 +7,8 @@ import Style from '../Styles/Plot.module.css';
 import plotIndex from '../Images/plotIndex.png';
 
 const Plot = () => {
-    const [plotTitle, setPlotTitle] = useState("عنوان خیلی الکی");
-    const [plotDes, setPlotDes] = useState("متن کاملا فرضی");
+    const [plotTitle, setPlotTitle] = useState("وقت، طلاست.");
+    const [plotDes, setPlotDes] = useState("می‌دونی اولین و مهم‌ترین قدم برای مدیریت زمان، بین این همه تکنیک ریز و درشت برنامه‌ریزی چیه؟");
     return (
         <div className={Style.container}>
             <div className={Style.plotContainer}>

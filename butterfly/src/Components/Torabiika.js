@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import Style from '../Styles/Torabiika.module.css';
 
 const Torabiika = () => {
-    const [torabiikaTitle, setTorabiikaTitle] = useState("عنوان خیلی الکی");
-    const [torabiikaDes, setTorabiikaDes] = useState("متن کاملا فرضی")
+    const [torabiikaTitle, setTorabiikaTitle] = useState("ترابیکا کیه؟");
+    const [torabiikaDes, setTorabiikaDes] = useState("ترابیکا، یه دختر معمولی و کمی تا اندکی تنهاست. اون داره نهایت تلاشش رو برای پیدا کردن مسیرش توی این دنیا میکنه اما تا الان موفق نبوده و احتمالا موفق هم نمیشه...");
     return (
         <div className={Style.container}>
             <h1 className={Style.torabiikaTitle}>{torabiikaTitle}</h1>

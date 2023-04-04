@@ -7,8 +7,8 @@ import Style from '../Styles/Bazinga.module.css';
 import bazingaIndex from '../Images/bazingaIndex.JPG';
 
 const Bazinga = () => {
-    const [bazingaTitle, setBazingaTitle] = useState("عنوان خیلی الکی");
-    const [bazingaDes, setBazingaDes] = useState("متن کاملا فرضی");
+    const [bazingaTitle, setBazingaTitle] = useState("پیتزا سفارش بده.");
+    const [bazingaDes, setBazingaDes] = useState("بهترین پایان برای هر چیز خوبی، زمانیه که می‌تونی پیتزا بخوری و استراحت کنی و چه استراحتی بهتر از سیت‌کام دیدن؟");
     return (
         <div className={Style.container}>
             <img className={Style.bazingaIndex} src={bazingaIndex} />
