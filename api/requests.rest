@@ -6,12 +6,12 @@ POST http://localhost:3001/todo/new
 Content-Type: application/json
 
 {
-    "text": "Order pizza"
+    "text": "fly"
 }
 
 ###
 
-DELETE http://localhost:3001/todo/delete/6432b3508040f439e8332839
+DELETE http://localhost:3001/todo/delete/6433bd2014e3372b6a75371d
 
 ###
 
