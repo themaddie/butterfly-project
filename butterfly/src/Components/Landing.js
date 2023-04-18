@@ -5,6 +5,8 @@ import Torabiika from './Torabiika';
 import Plot from './Plot';
 import Bazinga from './Bazinga';
 import Footer from './Footer';
+// Style
+import '../Styles/landing.css';
 
 const Landing = () => {
     return (

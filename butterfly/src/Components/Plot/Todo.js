@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 // Styles
-import Style from '../../Styles/Todo/Todo.module.css';
+import Style from '../../Styles/Plot/Todo.module.css';
 
 const API_BASE = "http://localhost:3001";
 

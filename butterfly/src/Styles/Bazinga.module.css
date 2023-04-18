@@ -3,6 +3,7 @@
   height: 395px;
   display: flex;
   box-sizing: content-box;
+  background-color: #f5f0ea;
   justify-content: space-between;
 }
 
