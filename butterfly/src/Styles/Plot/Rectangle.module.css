@@ -1,0 +1,38 @@
+.container {
+  width: 240px;
+  height: 400px;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #f4f8ff;
+}
+
+.container img {
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+}
+
+.container span {
+  width: 150px;
+  height: 150px;
+  display: block;
+  color: #333333;
+  margin-left: 48px;
+  margin-bottom: 30px;
+}
+
+.container button {
+  border: none;
+  direction: rtl;
+  cursor: pointer;
+  color: #285c96;
+  font-family: "Dana-Demi";
+  background-color: #f4f8ff;
+  border-bottom: 2px solid #285c96;
+}
+
+.container button:hover {
+  color: #f27e00;
+  border-bottom-color: #f27e00;
+}

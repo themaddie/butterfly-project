@@ -58,7 +58,6 @@ const Todo = () => {
 
     return (
         <div className={Style.container}>
-            <h1>Your To Do</h1>
             <div className={Style.todos}>
                 {todos.map(todo => (
                     <div className={`${Style.todo} + ${(todo.complete ? Style.complete : '')}`} key={todo._id}>

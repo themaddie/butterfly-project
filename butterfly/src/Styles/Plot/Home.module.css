@@ -1,0 +1,11 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.homeBox {
+  width: 710px;
+  height: 400px;
+  display: flex;
+}

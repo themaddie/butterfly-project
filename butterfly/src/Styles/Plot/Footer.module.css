@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  display: flex;
+  direction: rtl;
+  justify-content: center;
+}
+
+.container img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 5%;
+}
+
+.container img:hover {
+  opacity: 50%;
+}

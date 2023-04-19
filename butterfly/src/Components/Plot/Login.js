@@ -8,7 +8,7 @@ import loginIndex from '../../Images/Plot/loginIndex.jpg';
 const Login = () => {
     return (
         <div className={Style.container}>
-            <img className={Style.loginIndex} src={loginIndex} />
+        <img className={Style.loginIndex} src={loginIndex} alt='Login Index' />
             <div className={Style.loginBox}>
                 <h1>بیا تا گل برافشانیم و می در ساغر اندازیم</h1>
                 <h1>فلک را سقف بشکافیم و <span style={{color: '#285C96'}}> طرحی نو </span> دراندازیم</h1>

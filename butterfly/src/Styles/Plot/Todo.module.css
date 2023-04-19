@@ -1,6 +1,8 @@
-.todo{
-    display: flex;
-    margin: 5%;
+.container{
+  width: 100vw;
+  height: 100vh;
+  box-sizing: content-box;
+  background-color: #ffffff;
 }
 
 .todo .text {
