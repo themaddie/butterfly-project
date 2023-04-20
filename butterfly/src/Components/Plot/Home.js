@@ -15,15 +15,17 @@ import Footer from './Footer';
 const Home = () => {
     return (
         <div className={Style.container}>
-            <div className={Style.homeBox}>
-                <div>
-                    <SquareComp firstLine="خوش اومدی مهدیه!" secondLine="امیدوارم امروز همون روز باشه!" />
-                    <SquareComp margin="40px" firstLine="شنبه" secondLine="۲۷ فروردین ۱۴۰۲" />
+            <div className={Style.main}>
+                <div className={Style.homeBox}>
+                    <div>
+                        <SquareComp firstLine="خوش اومدی مهدیه!" secondLine="امیدوارم امروز همون روز باشه!" />
+                        <SquareComp margin="40px" firstLine="شنبه" secondLine="۲۷ فروردین ۱۴۰۲" />
+                    </div>
+                    <RectangleComp title="Today List" description="متن الکی" source={todoEmoji} />
+                    <RectangleComp title="Goals" description="متن الکی" source={goalsEmoji} />
                 </div>
-                <RectangleComp title="Today List" description="متن الکی" source={todoEmoji} />
-                <RectangleComp title="Goals" description="متن الکی" source={goalsEmoji} />
-            </div>  
-            <Footer firstSource={profileIcon} secondSource={settingsIcon} thirdSource={exitIcon} />
+            </div>
+            <Footer firstSource={profileIcon} firstLink={'/'} secondSource={settingsIcon} secondLink={'/'} thirdSource={exitIcon} thirdLink={'/Plot'} />
         </div>
     );
 };

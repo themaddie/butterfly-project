@@ -4,6 +4,13 @@
   background-color: #ffffff;
 }
 
+.main {
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .homeBox {
   width: 710px;
   height: 400px;
