@@ -21,8 +21,8 @@ const Home = () => {
                         <SquareComp firstLine="خوش اومدی مهدیه!" secondLine="امیدوارم امروز همون روز باشه!" />
                         <SquareComp margin="40px" firstLine="شنبه" secondLine="۲۷ فروردین ۱۴۰۲" />
                     </div>
-                    <RectangleComp title="Today List" description="متن الکی" source={todoEmoji} />
-                    <RectangleComp title="Goals" description="متن الکی" source={goalsEmoji} />
+                    <RectangleComp title="Goals" description="متن الکی" source={goalsEmoji} btnLink={'/'} />
+                    <RectangleComp title="Today List" description="متن الکی" source={todoEmoji} btnLink={'/plot/todo'} />
                 </div>
             </div>
             <Footer firstSource={profileIcon} firstLink={'/'} secondSource={settingsIcon} secondLink={'/'} thirdSource={exitIcon} thirdLink={'/Plot'} />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // Styles
 import Style from '../../Styles/Plot/Rectangle.module.css';
 
@@ -9,7 +10,7 @@ const RectangleComp = (props) => {
             <img alt='index' src={props.source} />
             <h3> {props.title} </h3>
             <span> {props.description} </span>
-            <button>کلیک کن!</button>
+            <Link to={props.btnLink}><button>کلیک کن!</button></Link>
         </div>
     );
 };

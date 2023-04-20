@@ -1,0 +1,31 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  direction: rtl;
+}
+
+.main {
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main h2 {
+  color: #285c96;
+  font-family: "Dana-Demi";
+}
+
+.thisMonthBox,
+.thisWeekBox,
+.thisDayBox {
+  width: 300px;
+  height: 700px;
+  margin-left: 8%;
+  background-color: red;
+}
+
+.thisDayBox {
+  margin-left: 0;
+}
