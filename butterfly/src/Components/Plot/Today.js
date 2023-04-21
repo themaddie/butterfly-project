@@ -5,21 +5,35 @@ import Style from '../../Styles/Plot/Today.module.css';
 import homeIcon from '../../Images/Plot/home.png';
 import exitIcon from '../../Images/Plot/exit.png';
 import settingsIcon from '../../Images/Plot/settings.png';
+import addIcon from '../../Images/Plot/add.png';
 // Components
 import Footer from './Footer';
+import TodayList from './TodayList';
 
 const Today = () => {
     return (
         <div className={Style.container}>
             <div className={Style.main}>
                 <div className={Style.thisMonthBox}>
-                    <h2>ماه جاری</h2>
+                    <div className={Style.titleBox}>
+                        <h2>ماه جاری</h2>
+                        <img alt='add' id='addThisMonth' className={Style.addTodo} src={addIcon} />
+                    </div>
+                    <TodayList text='Butterfly Project' />
                 </div>
                 <div className={Style.thisWeekBox}>
-                    <h2>هفته جاری</h2>
+                    <div className={Style.titleBox}>
+                        <h2>هفته جاری</h2>
+                        <img alt='add' id='addThisWeek' className={Style.addTodo} src={addIcon} />
+                    </div>
+                    <TodayList text='پریود!' />
                 </div>
                 <div className={Style.thisDayBox}>
-                    <h2>امروز</h2>
+                    <div className={Style.titleBox}>
+                        <h2>امروز</h2>
+                        <img alt='add' id='addToday' className={Style.addTodo} src={addIcon} />
+                    </div>
+                    <TodayList text='TodayList' />
                 </div>
             </div>
             <Footer firstSource={homeIcon} firstLink={'/'} secondSource={settingsIcon} secondLink={'/'} thirdSource={exitIcon} thirdLink={'/Plot'} />
