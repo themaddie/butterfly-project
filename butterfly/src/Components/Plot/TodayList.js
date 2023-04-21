@@ -21,7 +21,7 @@ const TodayList = (props) => {
                         ) : ''}
                         <span className={`${Style.text} ${doneTodo ? Style.doneText : ''}`} >{props.text}</span>
                     </div>
-                    {doneTodo ? (<img className={Style.doneIcon} src={doneIcon} />)
+                    {doneTodo ? (<img className={Style.doneIcon} src={doneIcon} alt='done' />)
                         :
                         (<div className={Style.checkbox} onClick={() => setDoneTodo(true)}></div>)
                     }

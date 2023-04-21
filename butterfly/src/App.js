@@ -8,6 +8,7 @@ import Bazinga from './Components/Bazinga';
 import Login from './Components/Plot/Login';
 import Home from './Components/Plot/Home';
 import Today from './Components/Plot/Today';
+import Goals from './Components/Plot/Goals';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/plot' element={<Login />}></Route>
         <Route path='/plot/home' element={<Home />}></Route>
         <Route path='/plot/todo' element={<Today />}></Route>
+        <Route path='/plot/goals' element={<Goals />}></Route>
 
         <Route path='/bazinga' element={<Bazinga />}></Route>
       </Routes>
