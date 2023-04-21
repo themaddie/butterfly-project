@@ -12,11 +12,19 @@
   justify-content: space-between;
 }
 
-.edit {
-  width: 18px;
-  height: 18px;
-  margin-top: 3px;
+.todo .box{
+    display: flex;
+}
+
+.deleteTodo {
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
   cursor: pointer;
+}
+
+.deleteTodo:hover {
+  opacity: 50%;
 }
 
 .text {
@@ -32,4 +40,8 @@
   margin-top: 4px;
   border-radius: 5px;
   border: 1px solid #000000;
+}
+
+.checkbox:hover {
+    border: 1px solid #F27E00;
 }
