@@ -60,7 +60,7 @@ const Todo = () => {
         <div className={Style.container}>
             <div className={Style.todos}>
                 {todos.map(todo => (
-                    <div className={`${Style.todo} + ${(todo.complete ? Style.complete : '')}`} key={todo._id}>
+                    <div className={`${Style.todo} ${(todo.complete ? Style.complete : '')}`} key={todo._id}>
                         <div className={Style.text}>{todo.text}</div>
                         <div className={Style.checkbox} onClick={() => completeTodo(todo._id)}>?</div>
                         <div className={Style.delete} onClick={() => deleteTodo(todo._id)}>delete</div>

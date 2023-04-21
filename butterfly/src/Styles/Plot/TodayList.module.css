@@ -12,11 +12,11 @@
   justify-content: space-between;
 }
 
-.todo .box{
-    display: flex;
+.todo .box {
+  display: flex;
 }
 
-.deleteTodo {
+.delete {
   width: 15px;
   height: 15px;
   margin-top: 5px;
@@ -33,6 +33,10 @@
   margin: 2px 5px 0 0;
 }
 
+.doneText {
+  text-decoration: line-through;
+}
+
 .checkbox {
   width: 15px;
   height: 15px;
@@ -43,10 +47,10 @@
 }
 
 .checkbox:hover {
-    border: 1px solid #F27E00;
+  border: 1px solid #f27e00;
 }
 
-.doneTodo{
-    width: 20px;
-    height: 20px;
+.doneIcon {
+  width: 20px;
+  height: 20px;
 }
