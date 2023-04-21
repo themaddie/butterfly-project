@@ -4,10 +4,12 @@ import { useState } from 'react';
 import Style from '../../Styles/Plot/TodayList.module.css';
 // Images
 import deleteIcon from '../../Images/Plot/delete.png';
+import doneIcon from '../../Images/Plot/done.png';
 
 const TodayList = (props) => {
 
     const [showDeleteIcon, setShowDeleteIcon] = useState(false);
+    const [showDoneIcon, setShowDoneIcon] = useState(false);
 
     return (
         <div className={Style.container}>
@@ -19,7 +21,10 @@ const TodayList = (props) => {
                         ) : ''}
                         <span className={Style.text}>{props.text}</span>
                     </div>
-                    <div className={Style.checkbox}>{props.done}</div>
+                    {showDoneIcon ? (<img className={Style.doneTodo} src={doneIcon} />)
+                        :
+                        (<div className={Style.checkbox} onClick={() => setShowDoneIcon(true)}></div>)
+                    }
                 </div>
             </div>
         </div>
