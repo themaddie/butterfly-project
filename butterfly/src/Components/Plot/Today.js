@@ -46,9 +46,11 @@ const Today = () => {
                         <img alt='add' id='addThisMonth' className={Style.addTodo} src={addIcon} onClick={() => setAddToMonth(true)} />
                         {addToMonth ?
                             (<div className={Style.addModal}>
-                                <img src={closeIcon} alt='close' onClick={() => setAddToMonth(false)} />
-                                <input type='text' placeholder='به این ماه یه تسک اضافه کن.' /> <br />
-                                <Link><button>اضافه کن!</button></Link>
+                                <div className={Style.modalContent}>
+                                    <img src={closeIcon} alt='close' onClick={() => setAddToMonth(false)} />
+                                    <input type='text' placeholder='به این ماه یه تسک اضافه کن.' /> <br />
+                                    <Link><button>اضافه کن!</button></Link>
+                                </div>
                             </div>)
                             : ''}
                     </div>
@@ -60,9 +62,11 @@ const Today = () => {
                         <img alt='add' id='addThisWeek' className={Style.addTodo} src={addIcon} onClick={() => setAddToWeek(true)} />
                         {addToWeek ?
                             (<div className={Style.addModal}>
-                                <img src={closeIcon} alt='close' onClick={() => setAddToWeek(false)} />
-                                <input type='text' placeholder='به این هفته یه تسک اضافه کن.' /> <br />
-                                <Link><button>اضافه کن!</button></Link>
+                                <div className={Style.modalContent}>
+                                    <img src={closeIcon} alt='close' onClick={() => setAddToWeek(false)} />
+                                    <input type='text' placeholder='به این هفته یه تسک اضافه کن.' /> <br />
+                                    <Link><button>اضافه کن!</button></Link>
+                                </div>
                             </div>)
                             : ''}
                     </div>
@@ -74,9 +78,11 @@ const Today = () => {
                         <img alt='add' id='addToDay' className={Style.addTodo} src={addIcon} onClick={() => setAddToDay(true)} />
                         {addToDay ?
                             (<div className={Style.addModal}>
-                                <img src={closeIcon} alt='close' onClick={() => setAddToDay(false)} />
-                                <input type='text' placeholder='به امروز یه تسک اضافه کن.' /> <br />
-                                <Link><button>اضافه کن!</button></Link>
+                                <div className={Style.modalContent}>
+                                    <img src={closeIcon} alt='close' onClick={() => setAddToDay(false)} />
+                                    <input type='text' placeholder='به امروز یه تسک اضافه کن.' /> <br />
+                                    <Link><button>اضافه کن!</button></Link>
+                                </div>
                             </div>)
                             : ''}
                     </div>
