@@ -1,34 +1,22 @@
-import React from 'react';
-import { useState } from 'react';
-// Styles
-import Style from '../../Styles/Plot/TodayList.module.css';
-// Images
-import deleteIcon from '../../Images/Plot/delete.png';
-import doneIcon from '../../Images/Plot/done.png';
+// import React from 'react';
+// import { useState, useEffect } from 'react';
+// import axios from 'axios';
+// // Styles
+// import Style from '../../Styles/Plot/TodayList.module.css';
+// // Images
+// import deleteIcon from '../../Images/Plot/delete.png';
+// import doneIcon from '../../Images/Plot/done.png';
 
-const TodayList = (props) => {
+// const API_BASE = "http://localhost:3001";
 
-    const [deleteTodo, setDeleteTodo] = useState(false);
-    const [doneTodo, setDoneTodo] = useState(false);
+// const TodayList = (props) => {
 
-    return (
-        <div className={Style.container}>
-            <div className={Style.todos}>
-                <div className={Style.todo}>
-                    <div className={Style.box} onMouseEnter={() => setDeleteTodo(true)} onMouseLeave={() => setDeleteTodo(false)}>
-                        {deleteTodo ? (
-                            <img className={Style.delete} alt='delete' src={deleteIcon} />
-                        ) : ''}
-                        <span className={`${Style.text} ${doneTodo ? Style.doneText : ''}`} >{props.text}</span>
-                    </div>
-                    {doneTodo ? (<img className={Style.doneIcon} src={doneIcon} alt='done' />)
-                        :
-                        (<div className={Style.checkbox} onClick={() => setDoneTodo(true)}></div>)
-                    }
-                </div>
-            </div>
-        </div>
-    );
-};
 
-export default TodayList;
+
+//     return (
+//         <div className={Style.container}>
+//         </div>
+//     );
+// };
+
+// export default TodayList;

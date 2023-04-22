@@ -21,6 +21,7 @@ function App() {
         <Route path='/plot/home' element={<Home />}></Route>
         <Route path='/plot/todo' element={<Today />}></Route>
         <Route path='/plot/goals' element={<Goals />}></Route>
+        {/* <Route path='/plot/check' element={<Todo />}></Route> */}
 
         <Route path='/bazinga' element={<Bazinga />}></Route>
       </Routes>
