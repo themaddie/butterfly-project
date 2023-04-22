@@ -48,7 +48,7 @@
 }
 
 .goals {
-    display: flex;
+  display: flex;
   direction: rtl;
   margin-bottom: 8%;
 }
@@ -58,10 +58,15 @@
   border: none;
   display: block;
   font-size: 1rem;
+  cursor: pointer;
   margin-right: 10px;
   box-sizing: content-box;
   background-color: #f4f8ff;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1.5px solid #333333;
+}
+
+.goals input:hover {
+  border-color: #f27e00;
 }
 
 .ideaIcon {
@@ -73,13 +78,13 @@
   width: 300px;
   height: 35px;
   border: none;
-  font-size: 1rem;
   direction: rtl;
   cursor: pointer;
   color: #ffffff;
   margin: 3% 0 0 9%;
   border-radius: 30px;
   box-sizing: content-box;
+  font-family: "Dana-Medium";
   background-color: #285c96;
 }
 

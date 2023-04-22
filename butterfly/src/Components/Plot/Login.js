@@ -15,8 +15,8 @@ const Login = () => {
                 <form>
                     <input type='email' placeholder='your email' /> <br />
                     <input type='password' placeholder='your password' /> <br />
-                    <button id={Style.login} type='submit'>شروع کن!</button> <br />
-                    <Link id={Style.signup} to='/plot/home'>هنوز ثبت‌نام نکردی؟</Link>
+                    <Link to='/plot/home'><button id={Style.login} type='submit'>شروع کن!</button></Link>
+                    <Link id={Style.signup}>هنوز ثبت‌نام نکردی؟</Link>
                 </form>
             </div>
         </div>
