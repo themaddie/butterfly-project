@@ -18,7 +18,7 @@ const Home = () => {
             <div className={Style.main}>
                 <div className={Style.homeBox}>
                     <div>
-                        <SquareComp firstLine="خوش اومدی مهدیه!" secondLine="امیدوارم امروز همون روز باشه!" />
+                        <SquareComp firstLine="خوش اومدی مهدیه!" secondLine="تو (احتمالا) میتونی." />
                         <SquareComp margin="40px" firstLine="شنبه" secondLine="۲۷ فروردین ۱۴۰۲" />
                     </div>
                     <RectangleComp title="Goals" description="متن الکی" source={goalsEmoji} btnLink={'/plot/goals'} />

@@ -5,7 +5,7 @@ import Style from '../../Styles/Plot/Square.module.css';
 const SquareComp = (props) => {
     return (
         <div className={Style.container} style={{marginTop: `${props.margin}`}}>
-            <span> {props.firstLine} </span>
+            <span className={Style.title}> {props.firstLine} </span> <br />
             <span> {props.secondLine} </span>
         </div>
     );
