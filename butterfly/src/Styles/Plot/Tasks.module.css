@@ -1,0 +1,14 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  direction: rtl;
+  background-color: #ffffff;
+}
+
+.main {
+  height: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

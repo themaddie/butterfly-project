@@ -1,37 +1,7 @@
 .container {
-  width: 100vw;
-  height: 100vh;
+  height: 96%;
   direction: rtl;
   background-color: #ffffff;
-}
-
-.main.blur {
-  opacity: 30%;
-}
-
-.main {
-  height: 94%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.main h2 {
-  color: #285c96;
-  font-family: "Dana-Demi";
-}
-
-.thisMonthBox,
-.thisWeekBox,
-.thisDayBox {
-  width: 300px;
-  height: 700px;
-  margin-left: 8%;
-  margin-bottom: 1%;
-}
-
-.thisDayBox {
-  margin-left: 0;
 }
 
 .titleBox {
@@ -40,14 +10,21 @@
   justify-content: space-between;
 }
 
-.addTodo {
+.titleBox h2 {
+  color: #285c96;
+  font-family: "Dana-Demi";
+}
+
+/* Add Task Style */
+
+.addTask {
   width: 30px;
   height: 30px;
   margin-left: 2%;
   cursor: pointer;
 }
 
-.addTodo:hover {
+.addTask:hover {
   opacity: 50%;
 }
 
@@ -122,7 +99,9 @@
   background-color: #285c96;
 }
 
-.todos {
+/* Tasks List Style */
+
+.tasksBox {
   width: 300px;
   height: 620px;
   overflow: scroll;
@@ -130,26 +109,24 @@
   background-color: #f4f8ff;
 }
 
-/* Comp */
-
-.todo {
+.task {
   display: flex;
-  padding: 6% 5% 0 6%;
+  padding: 5% 5% 2% 6%;
   justify-content: space-between;
 }
 
-.todo .box {
+.task .box {
   display: flex;
 }
 
-.delete {
+.deleteBtn {
   width: 15px;
   height: 15px;
   margin-top: 5px;
   cursor: pointer;
 }
 
-.deleteTodo:hover {
+.deleteBtnTodo:hover {
   opacity: 50%;
 }
 

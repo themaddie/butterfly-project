@@ -10,11 +10,14 @@ const TodoSchema = new Schema({
         type: Boolean,
         default: false
     },
+    label: {
+        type: String,
+    },
     timestamp: {
         type: String,
         default: Date.now()
-    }
-})
+    },
+});
 
 const Todo = mongoose.model("Todo", TodoSchema);
 

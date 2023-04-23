@@ -11,8 +11,8 @@ mongoose.connect("mongodb://127.0.0.1:27017/mern-todo", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
-.then(() => console.log("Connected to DB"))
-.catch(console.error);
+    .then(() => console.log("Connected to DB"))
+    .catch(console.error);
 
 const Todo = require('./models/Todo');
 
@@ -25,6 +25,7 @@ app.get('/todos', async (req, res) => {
 app.post('/todo/new', async (req, res) => {
     const todo = new Todo({
         text: req.body.text,
+        label: req.body.label,
     });
     todo.save();
 

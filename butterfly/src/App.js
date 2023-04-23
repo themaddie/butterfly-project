@@ -7,7 +7,7 @@ import About from './Components/About';
 import Bazinga from './Components/Bazinga';
 import Login from './Components/Plot/Login';
 import Home from './Components/Plot/Home';
-import Today from './Components/Plot/Today';
+import Tasks from './Components/Plot/Tasks';
 import Goals from './Components/Plot/Goals';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
 
         <Route path='/plot' element={<Login />}></Route>
         <Route path='/plot/home' element={<Home />}></Route>
-        <Route path='/plot/todo' element={<Today />}></Route>
+        <Route path='/plot/todo' element={<Tasks />}></Route>
         <Route path='/plot/goals' element={<Goals />}></Route>
         {/* <Route path='/plot/check' element={<Todo />}></Route> */}
 
