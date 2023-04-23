@@ -13,6 +13,10 @@ const TodaySchema = new Schema({
     label: {
         type: String,
     },
+    icon: {
+        type: Boolean,
+        default: false
+    },
     timestamp: {
         type: String,
         default: Date.now()

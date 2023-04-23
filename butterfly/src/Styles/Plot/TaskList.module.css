@@ -131,6 +131,8 @@
 }
 
 .text {
+  max-height: 25px;
+  max-width: 230px;
   display: block;
   overflow: scroll;
   margin: 2px 5px 0 0;
