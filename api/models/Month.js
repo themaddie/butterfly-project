@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const TodoSchema = new Schema({
+const MonthSchema = new Schema({
     text: {
         type: String,
         required: true
@@ -19,6 +19,6 @@ const TodoSchema = new Schema({
     },
 });
 
-const Todo = mongoose.model("Todo", TodoSchema);
+const Month = mongoose.model("Month", MonthSchema);
 
-module.exports = Todo;
+module.exports = Month;

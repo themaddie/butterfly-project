@@ -54,7 +54,7 @@ const Goals = () => {
                     </form>
                 </div>
             </div>
-            <Footer firstSource={homeIcon} firstLink={'/'} secondSource={settingsIcon} secondLink={'/'} thirdSource={exitIcon} thirdLink={'/Plot'} />
+            <Footer firstSource={homeIcon} firstLink={'/plot/home'} secondSource={settingsIcon} secondLink={'/'} thirdSource={exitIcon} thirdLink={'/Plot'} />
         </div>
     );
 };

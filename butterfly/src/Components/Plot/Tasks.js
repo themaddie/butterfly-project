@@ -14,13 +14,13 @@ const Tasks = () => {
     return (
         <div className={Style.container}>
             <div className={Style.main}>
-                <TaskList title='ماه جاری' placeHolder='تسک این ماه' periodLabel='Month' getAddress='/todos' postAddress='/todo/new' putAddress='/todo/complete/' deleteAddress='/todo/delete/' />
+                <TaskList margin='7%' title='ماه جاری' placeHolder='تسک این ماه' periodLabel='Month' getAddress='/month/todos' postAddress='/month/todo/new' putAddress='/month/todo/complete/' deleteAddress='/month/todo/delete/' />
 
-                <TaskList title='هفته جاری' placeHolder='تسک این هفته' periodLabel='Week' getAddress='/todos' postAddress='/todo/new' putAddress='/todo/complete/' deleteAddress='/todo/delete/' />
+                <TaskList margin='7%' title='هفته جاری' placeHolder='تسک این هفته' periodLabel='Week' getAddress='/week/todos' postAddress='/week/todo/new' putAddress='/week/todo/complete/' deleteAddress='/week/todo/delete/' />
 
-                <TaskList title='امروز' placeHolder='تسک امروز' periodLabel='Today' getAddress='/todos' postAddress='/todo/new' putAddress='/todo/complete/' deleteAddress='/todo/delete/' />
+                <TaskList title='امروز' placeHolder='تسک امروز' periodLabel='Today' getAddress='/today/todos' postAddress='/today/todo/new' putAddress='/today/todo/complete/' deleteAddress='/today/todo/delete/' />
             </div>
-            <Footer firstSource={homeIcon} firstLink={'/'} secondSource={settingsIcon} secondLink={'/'} thirdSource={exitIcon} thirdLink={'/Plot'} />
+            <Footer firstSource={homeIcon} firstLink={'/plot/home'} secondSource={settingsIcon} secondLink={'/'} thirdSource={exitIcon} thirdLink={'/Plot'} />
         </div>
     );
 };

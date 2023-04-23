@@ -28,7 +28,7 @@ const TaskList = (props) => {
     // Functions
     useEffect(() => {
         getTasks();
-    }, []);
+    }, );
 
     const getTasks = () => {
         axios.get(API_BASE + getUrl)
@@ -72,7 +72,7 @@ const TaskList = (props) => {
     };
 
     return (
-        <div className={Style.container}>
+        <div className={Style.container} style={{marginLeft: `${props.margin}`}}>
             <div className={Style.titleBox}>
                 <h2>{props.title}</h2>
                 <img alt='add' className={Style.addTask} src={addIcon} onClick={() => setShowAddModal(true)} />
