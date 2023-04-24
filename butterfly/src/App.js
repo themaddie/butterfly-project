@@ -6,6 +6,7 @@ import Landing from './Components/Landing';
 import About from './Components/About';
 import Bazinga from './Components/Bazinga';
 import Login from './Components/Plot/Login';
+import Signup from './Components/Plot/Signup';
 import Home from './Components/Plot/Home';
 import Tasks from './Components/Plot/Tasks';
 import Goals from './Components/Plot/Goals';
@@ -18,6 +19,7 @@ function App() {
         <Route path='/about' element={<About />}></Route>
 
         <Route path='/plot' element={<Login />}></Route>
+        <Route path='/plot/signup' element={<Signup />}></Route>
         <Route path='/plot/home' element={<Home />}></Route>
         <Route path='/plot/todo' element={<Tasks />}></Route>
         <Route path='/plot/goals' element={<Goals />}></Route>

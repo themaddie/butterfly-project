@@ -1,8 +1,7 @@
-GET http://localhost:3001/todos
+GET http://localhost:3001/today/todos
 
 ###
-
-POST http://localhost:3001/todo/new
+POST http://localhost:3001/today/todo/new
 Content-Type: application/json
 
 {
@@ -10,9 +9,20 @@ Content-Type: application/json
 }
 
 ###
-
 DELETE http://localhost:3001/todo/delete/6433bd2014e3372b6a75371d
 
 ###
-
 PUT http://localhost:3001/todo/complete/6432b3828040f439e833283c
+
+###
+GET http://localhost:3001/plot/users
+
+###
+POST http://localhost:3001/plot/signup
+Content-Type: application/json
+
+{
+    "name": "mahdieh",
+    "email": "mahdieh@gmail.com",
+    "password": "123"
+}
