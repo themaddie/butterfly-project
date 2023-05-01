@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 // Styles
 import Style from '../../Styles/Plot/Login.module.css';
 // Images
@@ -14,19 +15,29 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const redirect = useNavigate();
 
-    const submitForm = async (e) => {
+    const loginForm = e => {
         e.preventDefault();
-        const data = await fetch(API_BASE + '/plot/', {
+        axios({
             method: 'POST',
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
+            data: {
                 email: email,
                 password: password
-            })
-        }).then(res => res.json());
-        redirect("home", { replace: true });
+            },
+            withCredentials: true,
+            url: API_BASE + '/plot/login',
+        }).then(res => {
+            if (res.data === 'No User Exists') {
+                alert(res.data);
+                setEmail("");
+                setPassword("");
+            }
+            else if (res.data === 'Successfully Authenticated')
+                redirect("/plot/home", { replace: true });
+            // else{
+            // alert(res.data);
+            // setEmail("");
+            // setPassword("");}
+        }).catch(err => console.log(err));
     };
 
     return (
@@ -35,7 +46,7 @@ const Login = () => {
             <div className={Style.loginBox}>
                 <h1>بیا تا گل برافشانیم و می در ساغر اندازیم</h1>
                 <h1>فلک را سقف بشکافیم و <span style={{ color: '#285C96' }}> طرحی نو </span> دراندازیم</h1>
-                <form onSubmit={e => submitForm(e)} action='/plot' method='POST' >
+                <form onSubmit={e => loginForm(e)} action='/' method='POST' >
                     <input type='email' placeholder='your email' onChange={e => setEmail(e.target.value)} value={email} id='email' name='email' required /> <br />
                     <input type='password' placeholder='your password' onChange={e => setPassword(e.target.value)} value={password} id='password' name='password' required /> <br />
                     <button id={Style.login} type='submit'>شروع کن!</button>
