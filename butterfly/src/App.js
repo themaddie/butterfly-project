@@ -4,12 +4,12 @@ import "./Styles/App.css"
 // Components
 import Landing from './Components/Landing';
 import About from './Components/About';
-import Bazinga from './Components/Bazinga';
 import Login from './Components/Plot/Login';
 import Signup from './Components/Plot/Signup';
 import Home from './Components/Plot/Home';
 import Tasks from './Components/Plot/Tasks';
 import Goals from './Components/Plot/Goals';
+import Index from './Components/Bazinga/Index';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         <Route path='/plot/goals' element={<Goals />}></Route>
         {/* <Route path='/plot/check' element={<Todo />}></Route> */}
 
-        <Route path='/bazinga' element={<Bazinga />}></Route>
+        <Route path='/bazinga' element={<Index />}></Route>
       </Routes>
     </>
   );

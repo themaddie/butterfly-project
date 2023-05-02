@@ -1,0 +1,79 @@
+.poster {
+  width: 450px;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  margin-top: 5%;
+  display: block;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: "Dana-Bold";
+}
+
+.modal {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal div {
+  width: 550px;
+  height: 540px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: #fbf0ff;
+}
+
+.modal img {
+  width: 400px;
+  height: 250px;
+  margin: 9% 0 4% 0;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.modal p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: "Dana-Medium";
+}
+
+.modal span {
+  display: block;
+  font-size: 1.3rem;
+  margin: 3% 0 3% 0;
+  font-family: "Dana-Demi";
+}
+
+.modal button {
+  width: 180px;
+  height: 40px;
+  margin: 1%;
+  padding: 1%;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #7e6eac;
+}
+
+.modal button:hover {
+  font-family: 'Dana-Demi';
+}
+
+.loading {
+  color: #000000;
+  padding-top: 40%;
+}
