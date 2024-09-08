@@ -9,7 +9,7 @@ import navLine from '../Images/headerLine.png';
 
 const About = () => {
     const [aboutTitle, setAboutTitle] = useState("اینجا رو کی ساخته؟");
-    const [aboutDes, setAboutDes] = useState("همانطور که قبلا ذکر شد، اینجا توسط کسی که اندکی تنها و بسیار آشفته است، ساخته شده.");
+    const [aboutDes, setAboutDes] = useState("همانطور که قبلا ذکر شد، اینجا توسط کسی که بسیار آشفته است، ساخته شده.");
     return (
         <div className={Style.container}>
             <header>
